@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+@theme {
+  --animate-stops-scroll: stops-scroll 15s linear infinite;
+}
+
+@keyframes stops-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+
+.board-header,
+.board-row {
+  display: grid;
+  grid-template-columns: 10% 10% 1fr 10% 10%;
+  align-items: center;
+  text-align: center;
+}
+
+.board-header {
+  font-weight: 600;
+  text-transform: uppercase;
+}

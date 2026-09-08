@@ -1,1 +1,11 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Outfit:wght@100..900&display=swap');
+
+@theme{
+    --color-main-50: oklch(0.862 0.072 14.578);
+    --color-main-200: oklch(0.702 0.184 14.578);
+    --color-main-400: oklch(0.542 0.208 14.578);
+    --color-main-600: oklch(0.382 0.147 14.578);
+    --color-main-800: oklch(0.222 0.085 14.578);
+    --color-main-950: oklch(0.062 0.024 14.578);
+}
