@@ -9,6 +9,7 @@ const departures = Array.from({ length: 5 }, (_, index) => ({
   stops: 'Sarrión, Rubielos de Mora, Mora de Rubielos, Aín, Caudiel, Valencia',
   platform: '5',
   time: '10:40',
+  delay: '0 min'
 }))
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
               <span>Paradas</span>
               <span>Dársena</span>
               <span>H. salida</span>
+              <span>Retraso</span>
             </div>
             {departures.map((departure) => (
               <div className="departure-row" role="row" key={departure.id}>
@@ -38,6 +40,7 @@ function App() {
                 <span>{departure.stops}</span>
                 <span>{departure.platform}</span>
                 <span>{departure.time}</span>
+                <span>{departure.delay}</span>
               </div>
             ))}
           </div>
